@@ -1,0 +1,521 @@
+
+
+
+.note-container {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    /* width: 600px; */
+    /* border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+    /* margin-bottom: 10px; */
+    padding: 10px;
+    max-height: 300px;
+}
+
+.single-note {
+    display:flex;
+    justify-content: center;
+    height: 100%;
+    box-sizing: border-box;
+	/* list-style-position: inside; */
+	/* width: 600px; */
+	/* max-width: 100%; */
+	background: white;
+	/* box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.15); */
+    border-top: 2px solid #152347;
+    border-left: 2px solid #152347;
+    border-right: 2px solid #152347;
+   
+	border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    flex-direction: column;
+    text-align: center;
+    padding: 3px;
+}
+
+.delete-button {
+    background-color:#f73f3f;
+    border-radius: 16px;
+    color: #f6f5f5;
+    border: 1px solid #807e7e;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: medium;
+    width: 300px;
+    height: 30px;
+    box-shadow:
+    0 1px 0 rgba(0,0,0,.25),
+    inset 0 1px 2px rgba(233, 233, 233, 0.67),
+    inset 0 -1px 0 rgba(0,0,0,.14);
+}
+
+.button-background {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    /* font-size: large; */
+    font-weight: bold;
+    /* background-color: #f2f2f2; */
+    
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* margin-bottom: 10px; */
+    padding-bottom: 15px;
+    border-bottom: 2px solid #152347;
+    border-left: 2px solid #152347;
+    border-right: 2px solid #152347;
+}
+
+.value {
+    display: flex;
+    font-size: x-large;
+    font-weight: bold;
+    flex-direction: row;
+}
+
+.value2 {
+    display: flex;
+    font-size: small;
+    flex-direction: row;
+}
+
+.header-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px;
+    background-color: #f2f2f2;
+    margin-bottom: 3px;
+    /* border-radius: 10px; */
+    font-size: large;
+    font-weight: bold;
+}
+
+.box-left {
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #d1ebfa;
+    width: 50%;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: x-small;
+}
+
+.box-right {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #fbc0b7;
+    width: 50%;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: x-small;
+}
+
+
+
+.header {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    font-size: x-small;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 2px;
+    background-color: #fff;
+
+}
+
+.left {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 50%;
+    padding: 5px;
+}
+
+.right {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 50%;
+    padding: 5px;
+}
+/* Long css options for different teams colors */
+
+    .ERS {
+        display:flex;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #942323;
+        color: #fff;
+        width: 50%;
+        height: 60px;
+        margin: 5px;
+        border-radius: 5px;
+    } 
+
+    .BEARS {
+        color:#fff;
+        display:flex;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #0d1c38;
+        width: 50%;
+        height: 60px;
+        margin: 5px;
+        border-radius: 5px;
+    }
+
+    .BENGALS {
+        display:flex;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #fb8739;
+        color: #fff;
+        width: 50%;
+        height: 60px;
+        margin: 5px;
+        border-radius: 5px;
+    }
+    .BILLS {
+        display:flex;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #1c24b8;
+        width: 50%;
+        height: 60px;
+        margin: 5px;
+        border-radius: 5px;
+        color:white;
+    }
+    .BRONCOS {
+        color: white;
+        display:flex;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #21396a;
+        width: 50%;
+        height: 60px;
+        margin: 5px;
+        border-radius: 5px;
+    }
+    .BROWNS {
+        color: white;
+      display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #fa6829;
+    width: 50%;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    }
+    .BUCCANEERS {
+        color: white;
+      display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #e62222;
+    width: 50%;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    }
+    .CARDINALS {
+      display:flex;
+      color: white;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #a33146;
+    width: 50%;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    }
+    .CHARGERS {
+      display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    background-color: #68c6fc;
+    width: 50%;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    }
+    .CHIEFS {
+    color: white;
+      display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #f35162;
+    
+    width: 50%;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    }
+    .COLTS {
+    
+    display:flex;
+    color: white;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #133063;
+    width: 50%;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    }
+    .COMMANDERS {
+        color: white;
+      display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #8b4040;
+    width: 50%;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    }
+    .COWBOYS {
+        color: white;
+      display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #1a2f5d;
+    width: 50%;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    }
+    
+    .DOLPHINS {
+        color: white;
+      display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #278391;
+    width: 50%;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    }
+    .EAGLES {
+        color: white;
+      display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #17655e;
+    width: 50%;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    }
+    .FALCONS {
+        color: white;
+      display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #9c2e39;
+    width: 50%;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    }
+    .GIANTS {
+        color: white;
+      display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #262d88;
+    width: 50%;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    }
+    .JAGUARS {
+        color: white;
+      display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #32758b;
+    width: 50%;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    }
+    .JETS {
+        color: white;
+      display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #215836;
+    width: 50%;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    }
+    .LIONS {
+        color: white;
+      display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #2893d1;
+    width: 50%;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    }
+    .PACKERS {
+        color: white;
+      display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #205531;
+    width: 50%;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    }
+    .PANTHERS {
+        color: white;
+      display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #1992d8;
+    width: 50%;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    }
+    .PATRIOTS{
+      display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #193d5c;
+    width: 50%;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    }
+    .RAIDERS {
+        color: white;
+      display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #4b4c4d;
+    width: 50%;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    }
+    .RAMS {
+        color: white;
+      display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #0746f5;
+    width: 50%;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    }
+    .RAVENS {
+        color: white;
+      display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #381180;
+    width: 50%;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    }
+    .SAINTS {
+        color: black;
+      display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #b0a65d;
+    width: 50%;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    }
+    .SEAHAWKS {
+        color: white;
+      display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #193d5c;
+    width: 50%;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    }
+    .STEELERS {
+        color: white;
+      display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #1f1f1f;
+    width: 50%;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    }
+    .TEXANS {
+        color: white;
+      display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #1e262a;
+    width: 50%;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    }
+    .TITANS {
+        color: white;
+      display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #1b355c;
+    width: 50%;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    }
+    .VIKINGS {
+        color: white;
+      display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #652c97;
+    width: 50%;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    }
+
+
+

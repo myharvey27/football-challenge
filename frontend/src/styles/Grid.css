@@ -1,0 +1,157 @@
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px; /* Adjust width to fit your layout */
+    /* Adjust height to fit your needs */
+    border-radius: 10px;
+    margin: 10px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+  }
+  .grid-item-table {
+    display: flex;
+    border: 1px solid #807e7e; /* Optional: cell border */
+    border-radius: 16px;
+    background-color: rgb(242, 242, 242);
+    width: 100px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    
+  }
+
+  .grid-item-table-pv {
+    display: flex;
+    border: 1px solid #807e7e; /* Optional: cell border */
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 100px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow:
+    0 1px 0 rgba(0,0,0,.25),
+    inset 0 1px 2px rgba(255,255,255,.67),
+    inset 0 -1px 0 rgba(0,0,0,.14);
+    
+  }
+
+  .grid-item {
+    border: 1px solid #807e7e; /* Optional: cell border */
+    width: 100px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .placeholder {
+    display: flex;
+
+    font-weight: bold;
+    text-align: center;
+    align-items: left;
+    justify-content: left;
+  }
+
+  .button-false {
+    background-color:#b3e4b3;
+    border-radius: 16px;
+    color: #000;
+    border: 1px solid #807e7e;
+    width: 100px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    box-shadow:
+    0 1px 0 rgba(0,0,0,.25),
+    inset 0 1px 2px rgba(255,255,255,.67),
+    inset 0 -1px 0 rgba(0,0,0,.14);
+  
+  }
+
+  .button-true {
+    background-color:#5fc675;
+    border-radius: 16px;
+    color: #000;
+    border: 3px solid #0c3e18;
+    width: 100px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    box-shadow:
+    0 1px 0 rgba(0,0,0,.25),
+    inset 0 1px 2px rgba(255,255,255,.67),
+    inset 0 -1px 0 rgba(0,0,0,.14);
+  }
+
+  .button-compensatory-false {
+    background-color:#b3d7e4;
+    border-radius: 16px;
+    color: #000;
+    border: 1px solid #807e7e;
+    width: 100px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    box-shadow:
+    0 2px 0 rgba(0, 39, 59, 0.25),
+    inset 0 1px 2px rgba(255,255,255,.67),
+    inset 0 -1px 0 rgba(0,0,0,.14);
+  
+  }
+
+
+  .button-compensatory-true {
+    background-color:#28c1d8;
+    border-radius: 16px;
+    color: #000;
+    border: 3px solid #0a3e66;
+    width: 100px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    box-shadow:
+    0 1px 0 rgba(0,0,0,.25),
+    inset 0 1px 2px rgba(255,255,255,.67),
+    inset 0 -1px 0 rgba(0,0,0,.14);
+  }
+
+
+  .button-false:hover {
+    background-color: #5fc675;
+    transition: 0.2s;
+}
+
+.button-compensatory-false:hover {
+  background-color: #28c1d8;
+  transition: 0.2s;
+}
+
