@@ -152,6 +152,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWS_CREDENTIALS = True
 
+CORS_ORIGIN_WHITELIST = [
+    "http://127.0.0.1:8000", "https://football-challenge-backend-d58da5a932d9.herokuapp.com/", "http://football-challenge-backend-d58da5a932d9.herokuapp.com/",
+]
+
 
 prod_db = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(prod_db)
