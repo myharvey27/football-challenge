@@ -4,7 +4,7 @@ import axios from "axios"
 import { ACCESS_TOKEN } from "./constants"
 
 const api = axios.create( {
-    baseURL: "https://football-challenge-backend-d58da5a932d9.herokuapp.com"
+    baseURL: import.meta.env.VITE_API_URL
 })
 
 api.interceptors.request.use(
