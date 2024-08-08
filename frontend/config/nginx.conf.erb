@@ -51,7 +51,12 @@ http {
 		root /app/dist;
 
 		location / {
-			try_files $uri $uri/ /index.html;
+			## Clean URLs: match on extensionless requests.
+			# try_files $uri $uri/ $uri.html =404;
+
+			## Single-page app client-side routing: returns index.html if the requested path doesn't exist.
+			## When enabled, the client-side app must handle its own 404 errors.
+			# error_page 404 = /index.html;
 		}
 
 		## Define specific behaviors for sub directories and other locations.
