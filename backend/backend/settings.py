@@ -153,7 +153,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWS_CREDENTIALS = True
 
 CORS_ORIGIN_WHITELIST = [
-    "http://127.0.0.1:8000", "https://football-challenge-backend-d58da5a932d9.herokuapp.com/", "http://football-challenge-backend-d58da5a932d9.herokuapp.com/",
+    "http://127.0.0.1:8000", "https://football-challenge-backend-d58da5a932d9.herokuapp.com", "http://football-challenge-backend-d58da5a932d9.herokuapp.com",
 ]
 
 
