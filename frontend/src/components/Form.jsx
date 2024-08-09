@@ -12,6 +12,7 @@ function Form({route, method}) {
 
     const name = method === "login" ? "Login" : "Register";
     const description = method === "login" ? "Not registered?" : "Already have an account?"
+    const assist = method === "login" ? "" : "Make a Username and Password to register."
 
     const handleClick = () => {
         if (name === "Login") {
@@ -45,8 +46,7 @@ function Form({route, method}) {
         <form onSubmit={handleSubmit} className="form-container">
             <div>Welcome to NFL Draft Calculator</div>
             <h1>{name}</h1>
-            <div>{description}</div>
-            <button className="swap-button" onClick ={handleClick}>Click Here.</button>
+            <p className="small">{assist}</p>
             <input
                 className="form-input"
                 type="text"
@@ -65,6 +65,8 @@ function Form({route, method}) {
             <button className="form-button" type="submit">
                 {name}
             </button>
+            <div>{description}</div>
+            <button className="swap-button" onClick ={handleClick}>Click Here.</button>
         </form>
     );
 

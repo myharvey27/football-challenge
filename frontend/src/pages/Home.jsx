@@ -38,7 +38,7 @@ function Home() {
     const getOffers = () => {
         api.get("/offers/offers/").then((res) => res.data).then((data) => 
             {console.log(data); setOffers(data)})
-            .catch((err) => alert(err));
+            .catch((err) => console.log(err));
     }
 
     const deleteOffer = (id) => {
@@ -48,7 +48,7 @@ function Home() {
                 getOffers();
             } else {
                 alert("Error deleting offer.")
-            }}).catch((err) => alert(err));
+            }}).catch((err) => console.log(err));
     }
 
     const resetOffer = () => {
@@ -238,7 +238,7 @@ function Home() {
                                         console.log("picks_A list", picksA);
                                         console.log("picks_B list", picksB);
 
-                                        alert("Make sure to reset the calculator. Unclick any selected picks.")
+                                        alert("Make sure to reset the calculator.")
                                         return;
                                     }
                                     setRankingA(e.target.value)}}></input>
@@ -278,7 +278,7 @@ function Home() {
                                         alert("Make sure teams have different season finishes.");
                                         }
                                     if (teamA !== 0 || teamB!= 0) {
-                                        alert("Make sure to reset the calculator. Unclick any selected picks.")
+                                        alert("Make sure to reset the calculator.")
                                         return;
                                     }
                                     
