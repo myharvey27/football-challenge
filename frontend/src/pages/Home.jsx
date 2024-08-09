@@ -28,7 +28,8 @@ function Home() {
     const [calculation, setCalculation] = useState(0);
     // handy UI helpers
     const [note, setNote] = useState("Select Picks to Change Value:");
-    const [isVisible, setIsVisible] = useState(false);
+    const [isVisible, setIsVisible] = useState(true);
+    const [reset, setReset] = useState(false);
 
     useEffect(() => {
         getOffers();
@@ -48,6 +49,21 @@ function Home() {
             } else {
                 alert("Error deleting offer.")
             }}).catch((err) => alert(err));
+    }
+
+    const resetOffer = () => {
+        setPicksA("");
+        setPicksB("");
+        setTeamA(0);
+        setTeamB(0);
+        setNote("Select Picks to Change Value:");
+        setCalculation(0);
+        setReset(true);
+        location.reload();
+    }
+
+    const resetResponse = (reset_val) => {
+        setReset(false);
     }
 
     const storeOffer = () => {
@@ -185,6 +201,7 @@ function Home() {
             </div>
             <div className="calculator-header3">
                 <button className="header-item3" onClick={storeOffer}>Store Offer</button>
+                <button className="header-item4" onClick={resetOffer}>Reset</button>
                 </div>
 
             {/* <div className="scaled"> */}
@@ -230,7 +247,7 @@ function Home() {
                         </form>
                     </div>
                     <div className="center">
-                        <CreateTableForSchema schemaKey={rankingA} change={handleTable1State} schemaCompensatory={trade_from}/>
+                        <CreateTableForSchema  reset={reset} clear={resetResponse} schemaKey={rankingA} change={handleTable1State} schemaCompensatory={trade_from}/>
                     </div>
                 </div>
                 <div className ="team-item">
@@ -271,7 +288,7 @@ function Home() {
                     </form>
                     </div>
                 <div className="center">
-                    <CreateTableForSchema schemaKey={rankingB} change={handleTable2State} schemaCompensatory={trade_to}/>
+                    <CreateTableForSchema reset={reset} clear={resetResponse} schemaKey={rankingB} change={handleTable2State} schemaCompensatory={trade_to}/>
                 </div>
             </div>
             </div>

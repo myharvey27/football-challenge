@@ -53,6 +53,11 @@
     inset 0 -1px 0 rgba(0,0,0,.14);
 }
 
+.delete-button:hover {
+  background-color: #471515;
+  transition: 0.2s;
+}
+
 .button-background {
     display: flex;
     justify-content: center;

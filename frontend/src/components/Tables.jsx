@@ -5,7 +5,7 @@ import "../styles/Grid.css"
 
 
 
-const CreateTableForSchema = ({schemaKey, change, schemaCompensatory})  => {
+const CreateTableForSchema = ({schemaKey, change, schemaCompensatory, reset, clear})  => {
     const [buttonStates, setButtonStates] = useState([false, false, false, false, false, false, false, false, false, false, false]);
     const [toAdd, setVals] = useState([])
     const [pickvar, setPicks] = useState([])
@@ -18,6 +18,16 @@ const CreateTableForSchema = ({schemaKey, change, schemaCompensatory})  => {
          <div></div>
         ); 
     } 
+
+    if (reset === true) {
+        setVals([]);
+        setPicks([]);
+        setButtonStates([false, false, false, false, false, false, false, false, false, false, false]);
+        clear(false);
+        //change([], []);
+        //return;
+
+    }
 
     let picks = schema.picks;
     let values = schema.values;
