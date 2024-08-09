@@ -38,7 +38,7 @@ function Form({route, method}) {
                 navigate("/login")
             }
         } catch (error) {
-            alert("error")
+            alert("this account is not registered or username/password incorrect")
         } 
     };
 
