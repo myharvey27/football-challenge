@@ -43,6 +43,7 @@ function Form({route, method}) {
 
     return (
         <form onSubmit={handleSubmit} className="form-container">
+            <div>Welcome to NFL Draft Calculator</div>
             <h1>{name}</h1>
             <div>{description}</div>
             <button className="swap-button" onClick ={handleClick}>Click Here.</button>
