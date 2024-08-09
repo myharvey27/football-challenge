@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 from datetime import timedelta
-#import dj_database_url
+import dj_database_url
 from dotenv import load_dotenv
 import os
 
@@ -162,8 +162,8 @@ CORS_ORIGIN_WHITELIST = [
 ]
 
 
-#prod_db = dj_database_url.config(conn_max_age=500)
-#DATABASES['default'].update(prod_db)
+prod_db = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(prod_db)
 
 
 
